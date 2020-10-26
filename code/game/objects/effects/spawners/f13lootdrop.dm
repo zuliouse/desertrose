@@ -530,8 +530,7 @@
 				/obj/item/claymore/machete/pipe,
 				/obj/item/kitchen/knife/cosmicdirty,
 				/obj/item/melee/unarmed/brass,
-				/obj/item/melee/unarmed/brass/spiked,
-				/obj/item/kitchen/knife/bowie
+				/obj/item/melee/unarmed/brass/spiked
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3 //TIER 3 MELEE WEAPON
@@ -550,8 +549,7 @@
 				/obj/item/shield/legion/buckler,
 				/obj/item/melee/unarmed/tigerclaw,
 				/obj/item/melee/unarmed/bladed,
-				/obj/item/melee/unarmed/sappers,
-				/obj/item/kitchen/knife/trench
+				/obj/item/melee/unarmed/sappers
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier4 //TIER 4 MELEE WEAPON
@@ -565,7 +563,7 @@
 				/obj/item/melee/unarmed/lacerator,
 				/obj/item/melee/unarmed/maceglove,
 				/obj/item/melee/unarmed/punchdagger,
-				/obj/item/shield/riot,
+				/obj/item/shield/riot
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier5 //TIER 5 MELEE WEAPON
@@ -682,14 +680,9 @@
 				/obj/item/gun/ballistic/automatic/marksman/servicerifle/varmint,
 				//obj/item/ammo_box/magazine/m556/rifle/small,
 				/obj/item/ammo_box/magazine/m556/rifle/small)
-	
-	var/loot12 = list(
-				/obj/item/gun/ballistic/revolver/m29/snub,
-				/obj/item/ammo_box/m44
-	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier1/Initialize(mapload) //on mapload, pick what shit to spawn
-	loot = pick(loot1, loot2, loot3, loot4, loot5, loot6, loot7, loot8, loot9, loot10, loot11, loot12)
+	loot = pick(loot1, loot2, loot3, loot4, loot5, loot6, loot7, loot8, loot9, loot10, loot11)
 	. = ..()
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2 //TIER 2 GUN
@@ -751,17 +744,9 @@
 				/obj/item/stock_parts/cell/ammo/ec,
 				""
 				)
-	var/loot11 = list(
-				/obj/item/gun/ballistic/automatic/pistol/beretta,
-				/obj/item/ammo_box/magazine/m9mmds
-	)
-	var/loot12 = list(
-				/obj/item/gun/ballistic/automatic/pistol/sig,
-				/obj/item/ammo_box/magazine/m9mm
-	)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier2/Initialize(mapload) //on mapload, pick what shit to spawn
-	loot = pick(loot1, loot2, loot3, loot4, loot5, loot6, loot7, loot8, loot9, loot10, loot11, loot12)
+	loot = pick(loot1, loot2, loot3, loot4, loot5, loot6, loot7, loot8, loot9, loot10)
 	. = ..()
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier3 //TIER 3 GUN
@@ -935,8 +920,7 @@
 				/obj/item/gun/energy/laser/scatter,
 				/obj/item/gun/ballistic/revolver/sequoia/scoped,
 				/obj/item/gun/ballistic/automatic/bozar,
-				/obj/item/gun/energy/gammagun,
-				/obj/item/gun/ballistic/automatic/p90
+				/obj/item/gun/energy/gammagun
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/unique //UNIQUE GUN
@@ -1068,8 +1052,7 @@
 				/obj/item/ammo_box/a50MG/incendiary,
 				/obj/item/ammo_box/magazine/m556/rifle/extended,
 				/obj/item/ammo_box/magazine/m762/ext,
-				/obj/item/ammo_box/magazine/d12g,
-				/obj/item/ammo_box/magazine/m10mm_p90
+				/obj/item/ammo_box/magazine/d12g
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5/Initialize(mapload) //on mapload, pick how many shit to spawn

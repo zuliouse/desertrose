@@ -1,6 +1,3 @@
-//needler
-//obj/item/ammo_casing/
-
 //5mm
 /obj/item/ammo_casing/c5mm
 	name = "5mm FMJ bullet casing"
