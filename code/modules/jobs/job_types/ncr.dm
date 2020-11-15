@@ -2,8 +2,8 @@
 	department_flag = NCR
 	selection_color = "#ffeeaa"
 
-	access = list(ACCESS_NCR)
-	minimal_access = list(ACCESS_NCR)
+	access = list(ACCESS_NCR, ACCESS_NCROFFDUTY)
+	minimal_access = list(ACCESS_NCR, ACCESS_NCROFFDUTY)
 	forbids = "The NCR forbids: Chem and drug use such as jet or alcohol while on duty. Execution of unarmed or otherwise subdued targets without authorisation."
 	enforces = "The NCR expects: Obeying the lawful orders of superiors. Proper treatment of prisoners.  Good conduct within the Republic's laws. Wearing the uniform."
 	objectivesList = list("Leadership recommends the following goal for this week: Establish an outpost at the radio tower","Leadership recommends the following goal for this week: Neutralize and capture dangerous criminals", "Leadership recommends the following goal for this week: Free slaves and establish good relations with unaligned individuals.")
@@ -37,7 +37,7 @@ Colonel
 	..()
 	if(visualsOnly)
 		return
-	H.add_trait(TRAIT_TECHNOPHREAK)
+	H.add_trait(TRAIT_TECHNOPHREAK, TRAIT_GENERIC)
 
 /datum/outfit/job/ncr/f13colonel
 	name 		= "NCR Colonel"
@@ -84,7 +84,7 @@ Captain
 	..()
 	if(visualsOnly)
 		return
-	H.add_trait(TRAIT_TECHNOPHREAK)
+	H.add_trait(TRAIT_TECHNOPHREAK, TRAIT_GENERIC)
 
 /datum/outfit/job/ncr/f13captain
 	name = "NCR Captain"
@@ -189,7 +189,7 @@ Lieutenant
 	..()
 	if(visualsOnly)
 		return
-	H.add_trait(TRAIT_TECHNOPHREAK)
+	H.add_trait(TRAIT_TECHNOPHREAK, TRAIT_GENERIC)
 
 /datum/outfit/job/ncr/f13lieutenant
 	name = "NCR Lieutenant"
@@ -695,6 +695,9 @@ Recruit
 	exp_requirements = 12
 	exp_type = EXP_TYPE_CREW
 
+	access = list(ACCESS_NCROFFDUTY)
+	minimal_access = list(ACCESS_NCROFFDUTY)
+
 	outfit = /datum/outfit/job/ncr/f13ncrcitizen
 
 	loadout_options = list(
@@ -792,7 +795,7 @@ Veteran Ranger
 	..()
 	if(visualsOnly)
 		return
-	H.add_trait(TRAIT_TECHNOPHREAK)
+	H.add_trait(TRAIT_TECHNOPHREAK, TRAIT_GENERIC)
 
 /datum/outfit/job/ncr/f13vetranger
 	name = "NCR Veteran Ranger"
@@ -859,7 +862,7 @@ Ranger -- Split into Patrol and Scout
 	..()
 	if(visualsOnly)
 		return
-	H.add_trait(TRAIT_TECHNOPHREAK)
+	H.add_trait(TRAIT_TECHNOPHREAK, TRAIT_GENERIC)
 
 /datum/outfit/job/ncr/f13ranger
 	name = "NCR Ranger"
@@ -928,7 +931,7 @@ Ranger -- Split into Patrol and Scout
 	..()
 	if(visualsOnly)
 		return
-	H.add_trait(TRAIT_TECHNOPHREAK)
+	H.add_trait(TRAIT_TECHNOPHREAK, TRAIT_GENERIC)
 
 /datum/outfit/job/ncr/f13rangerpatrol
 	name = "NCR Patrol Ranger"
@@ -979,7 +982,7 @@ Ranger -- Split into Patrol and Scout
 	..()
 	if(visualsOnly)
 		return
-	H.add_trait(TRAIT_TECHNOPHREAK)
+	H.add_trait(TRAIT_TECHNOPHREAK, TRAIT_GENERIC)
 
 /datum/outfit/job/ncr/f13rangerscout
 	name = "NCR Scout Ranger"
